@@ -9,38 +9,13 @@
 pip install -r requirements.txt
 ```
 
-**Примечание:** ChromeDriver устанавливается автоматически благодаря `webdriver-manager`. Вам не нужно скачивать его вручную!
+**Примечание:** ChromeDriver устанавливается автоматически
 
 ## Запуск тестов
 
-### Вариант 1: Использование готовых скриптов (рекомендуется)
+### Прямой запуск
 
-**Для Windows (PowerShell):**
-```powershell
-.\run_tests.ps1
 ```
-
-**Для Windows (CMD):**
-```cmd
-run_tests.bat
-```
-
-### Вариант 2: Прямой запуск
-
-**Если путь содержит кириллицу или пробелы, используйте кавычки:**
-
-**PowerShell:**
-```powershell
-python test_wikipedia_earth.py
-```
-
-**Или с виртуальным окружением:**
-```powershell
-& ".venv\Scripts\python.exe" test_wikipedia_earth.py
-```
-
-**CMD:**
-```cmd
 python test_wikipedia_earth.py
 ```
 
@@ -74,5 +49,3 @@ python test_wikipedia_earth.py
 ## Автоматическая установка драйвера
 
 Проект использует `webdriver-manager` для автоматической установки и управления ChromeDriver. При первом запуске драйвер будет автоматически скачан и установлен в кэш пользователя.
-
-
